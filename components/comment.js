@@ -6,6 +6,11 @@ import timeAgo from '../lib/time-ago';
 
 import styles from './comment.module.css';
 
+function ServerComponent() {
+  // 'use server'
+  console.log("hello");
+  return 
+}
 export default function Comment({ user, text, date, comments, commentsCount }) {
   const [toggled, setToggled] = useState(false);
 
@@ -19,6 +24,10 @@ export default function Comment({ user, text, date, comments, commentsCount }) {
           {toggled ? `[+${(commentsCount || 0) + 1}]` : '[-]'}
         </span>
       </div>
+      <button onClick={ServerComponent}>
+          use server 테스트
+      </button>
+
 
       {toggled
         ? null

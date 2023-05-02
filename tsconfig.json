@@ -20,6 +20,6 @@
     "incremental": true,
     "module": "esnext"
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "page copy.tsx.backup", "app/form.jsx", "app/counter.jsx"],
   "exclude": ["node_modules"]
 }

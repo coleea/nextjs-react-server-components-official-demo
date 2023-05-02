@@ -6,10 +6,11 @@ import styles from './stories.module.css'
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
+
 async function StoryWithData({ id }) {
   const data = await fetchData(`item/${id}`)
-  await sleep(10000)
-  console.log('슬립풀림');
+  // await sleep(10000)
+  // console.log('슬립풀림');
   const story = transform(data)
   return <Story {...story} />
 }

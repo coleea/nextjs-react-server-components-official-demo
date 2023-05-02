@@ -1,7 +1,7 @@
-import Counter from './counter'
-import Form from './form'
+import Counter from '../counter'
+import Form from '../form'
 
-import dec, { inc } from './actions'
+import dec, { inc } from '../actions'
 
 export default function Page() {
   const two = 2
@@ -12,7 +12,6 @@ export default function Page() {
         dec={dec}
         double={async (x) => {
           'use server'
-          console.log('this is in use server function');          
           return x * two
         }}
       />
@@ -20,3 +19,5 @@ export default function Page() {
     </>
   )
 }
+
+export const runtime = 'edge'
