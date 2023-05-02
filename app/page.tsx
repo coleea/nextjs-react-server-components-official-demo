@@ -16,7 +16,12 @@ export default function Page() {
           return x * two
         }}
       />
-      {/* <Form /> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <Form />
     </>
   )
 }

@@ -33,7 +33,7 @@ export default function Counter({ inc, dec, double }) {
           setCount(newCount)
         }}
       >
-        *2 (use-server가 적용된 함수가 호출됨)
+        *2 (use-server 함수가 호출됨)
       </button>
     </div>
   )

@@ -17,6 +17,7 @@ async function nowhere() {
 
 async function file(formData) {
   'use server'
+  console.log('파일처리 함수가 서버에서 실행됨');
   const file = formData.get('file')
   console.log('File name:', file.name, 'size:', file.size)
 }
@@ -36,7 +37,7 @@ export default function Form() {
       <form method="POST" action="">
         <input type="text" name="$$id" value={nowhere.$$id} hidden readOnly />
         <button type="submit" id="nowhere">
-          Go nowhere
+          page not found로 리다이렉팅
         </button>
       </form>
       <hr />
