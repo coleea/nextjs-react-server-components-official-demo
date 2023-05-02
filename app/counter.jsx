@@ -17,7 +17,7 @@ export default function Counter({ inc, dec, double }) {
       >
         +1
       </button>
-      <button
+      {/* <button
         id="dec"
         onClick={async () => {
           const newCount = await dec(count)
@@ -25,7 +25,7 @@ export default function Counter({ inc, dec, double }) {
         }}
       >
         -1
-      </button>
+      </button> */}
       <button
         id="double"
         onClick={async () => {
@@ -33,7 +33,7 @@ export default function Counter({ inc, dec, double }) {
           setCount(newCount)
         }}
       >
-        *2
+        *2 (use-server가 적용된 함수가 호출됨)
       </button>
     </div>
   )
