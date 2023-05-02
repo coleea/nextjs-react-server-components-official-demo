@@ -8,7 +8,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 async function StoryWithData({ id }) {
   const data = await fetchData(`item/${id}`)
-  await sleep(1000)
+  await sleep(5000)
   console.log('슬립풀림');
   const story = transform(data)
   return <Story {...story} />
